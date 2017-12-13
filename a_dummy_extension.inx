@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <_name>Dummy Extension</_name>
+  <id>dummyextension</id>
+
+  <dependency type="executable" location="extensions">a_dummy_extension.py</dependency>
+  
+  <param name="count" type="int" min="0" max="10" _gui-text="How many?">2</param>
+  
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+      <submenu _name="Chart Studios" />
+    </effects-menu>
+  </effect>
+  <script>
+    <command reldir="extensions" interpreter="python">a_dummy_extension.py</command>
+  </script>
+</inkscape-extension>
